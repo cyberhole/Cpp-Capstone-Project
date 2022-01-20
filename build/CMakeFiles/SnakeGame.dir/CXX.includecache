@@ -10,14 +10,6 @@
 snake.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/snake.h
 
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.cpp
-enemy.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
-cmath
--
-iostream
--
-
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
 vector
 -
@@ -25,16 +17,6 @@ SDL.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/SDL.h
 snake.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/snake.h
-
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.cpp
-game.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
-iostream
--
-SDL.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/SDL.h
-enemy.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
 
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
 random
@@ -49,6 +31,8 @@ snake.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/snake.h
 enemy.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
+memory
+-
 
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/main.cpp
 iostream
@@ -59,13 +43,9 @@ game.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
 renderer.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.h
-
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.cpp
-renderer.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.h
-iostream
+sstream
 -
-string
+fstream
 -
 
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.h
