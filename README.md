@@ -44,3 +44,9 @@ This work is licensed under a
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+## What is different from the original capstone project
+ - An enemy snake was created that knows its way to the food.
+ - You can steal the enemy's points by forcing the the enemy snake "into your body" but the enemy will never die. Also the speed of the enemy is constant.
+ - You can be killed if the head of your snake touches the enemy.
+ - The game keeps track of the scores.

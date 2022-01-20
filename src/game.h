@@ -7,19 +7,24 @@
 #include "renderer.h"
 #include "snake.h"
 #include "enemy.h"
+#include <memory>
 
 class Game {
  public:
   Game(std::size_t grid_width, std::size_t grid_height);
-  
+  ~Game();
+
+
   void Run(Controller const &controller, Renderer &renderer,
-           std::size_t target_frame_duration);
+           std::size_t target_frame_duration,int highScore);
   int GetScore() const;
   int GetSize() const;
+  void SetScore();
 
  private:
   Snake snake;
-  Enemy _enemy;
+
+  std::unique_ptr<Enemy> _enemy; // enemy snake
   SDL_Point food;
 
   std::random_device dev;
@@ -28,6 +33,9 @@ class Game {
   std::uniform_int_distribution<int> random_h;
 
   int score{0};
+
+  void KillEnemy();
+  void KilledByEnemy();
 
   void PlaceFood();
   void Update();
