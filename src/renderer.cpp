@@ -5,10 +5,8 @@
 Renderer::Renderer(const std::size_t screen_width,
                    const std::size_t screen_height,
                    const std::size_t grid_width, const std::size_t grid_height)
-    : screen_width(screen_width),
-      screen_height(screen_height),
-      grid_width(grid_width),
-      grid_height(grid_height) {
+    : screen_width(screen_width), screen_height(screen_height),
+      grid_width(grid_width), grid_height(grid_height) {
   // Initialize SDL
   if (SDL_Init(SDL_INIT_VIDEO) < 0) {
     std::cerr << "SDL could not initialize.\n";
@@ -38,7 +36,8 @@ Renderer::~Renderer() {
   SDL_Quit();
 }
 
-void Renderer::Render(Snake const snake, SDL_Point const &food,Enemy const enemy) {
+void Renderer::Render(Snake const snake, SDL_Point const &food,
+                      Enemy const enemy) {
   SDL_Rect block;
   block.w = screen_width / grid_width;
   block.h = screen_height / grid_height;
@@ -71,8 +70,6 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Enemy const enemy
   }
   SDL_RenderFillRect(sdl_renderer, &block);
 
-
-
   // Render enemy's body
   SDL_SetRenderDrawColor(sdl_renderer, 0, 255, 0, 0xFF);
   for (SDL_Point const &point : enemy.body) {
@@ -80,7 +77,7 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Enemy const enemy
     block.y = point.y * block.h;
     SDL_RenderFillRect(sdl_renderer, &block);
   }
- // Render enemy's head
+  // Render enemy's head
   block.x = static_cast<int>(enemy.head_x) * block.w;
   block.y = static_cast<int>(enemy.head_y) * block.h;
   if (snake.alive) {
@@ -90,19 +87,13 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Enemy const enemy
   }
   SDL_RenderFillRect(sdl_renderer, &block);
 
-
-
-
-
-
-
-
-
   // Update Screen
   SDL_RenderPresent(sdl_renderer);
 }
 
-void Renderer::UpdateWindowTitle(int score, int fps,int highScore) {
-  std::string title{"Snake Score: " + std::to_string(score) + " FPS: " + std::to_string(fps)+" HighScore: " + std::to_string(highScore)};
+void Renderer::UpdateWindowTitle(int score, int fps, int highScore) {
+  std::string title{"Snake Score: " + std::to_string(score) +
+                    " FPS: " + std::to_string(fps) +
+                    " HighScore: " + std::to_string(highScore)};
   SDL_SetWindowTitle(sdl_window, title.c_str());
 }
