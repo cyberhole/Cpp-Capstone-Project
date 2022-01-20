@@ -18,6 +18,16 @@ SDL.h
 snake.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/snake.h
 
+/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.cpp
+game.h
+/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
+iostream
+-
+SDL.h
+/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/SDL.h
+enemy.h
+/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
+
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
 random
 -
@@ -32,20 +42,6 @@ snake.h
 enemy.h
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/enemy.h
 memory
--
-
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/main.cpp
-iostream
--
-controller.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/controller.h
-game.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/game.h
-renderer.h
-/home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.h
-sstream
--
-fstream
 -
 
 /home/rafael/Desktop/CppND-Capstone-Snake-Game/src/renderer.h
